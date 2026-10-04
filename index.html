@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NNR Fisheries | Aquaculture & Seafood Exports</title>
+<meta name="description" content="NNR Fisheries — aquaculture and seafood export business.">
+<style>
+:root{--navy:#073b8f;--blue:#0b79d0;--cyan:#17b9e8;--ink:#08233f;--muted:#5e7085;--bg:#f6fbff}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit;text-decoration:none}.container{width:min(1140px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid #e7f0f8}
+.nav-inner{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}.brand img{width:58px;height:58px;object-fit:contain}
+.brand span{font-size:1.2rem;color:var(--navy)}.nav-links{display:flex;gap:28px;font-weight:600;color:#24435f}
+.nav-links a:hover{color:var(--blue)}.menu{display:none;border:0;background:none;font-size:1.8rem;color:var(--navy)}
+.hero{min-height:calc(100vh - 78px);display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 82% 20%,rgba(23,185,232,.18),transparent 30%),radial-gradient(circle at 15% 85%,rgba(11,121,208,.12),transparent 30%),linear-gradient(135deg,#fff,#eef8ff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.kicker{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.82rem}
+h1{font-size:clamp(2.7rem,6vw,5.4rem);line-height:1.02;margin:14px 0 22px;color:var(--navy)}
+h1 span{color:var(--cyan)}.hero p{max-width:600px;font-size:1.1rem;color:var(--muted)}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:999px;font-weight:800;transition:.2s;border:1px solid transparent}
+.btn-primary{background:var(--navy);color:white;box-shadow:0 10px 25px rgba(7,59,143,.2)}.btn-primary:hover{transform:translateY(-2px);background:#052d6e}
+.btn-outline{border-color:#a9c9e5;color:var(--navy);background:white}.btn-outline:hover{border-color:var(--blue)}
+.logo-card{width:min(430px,90%);aspect-ratio:1;margin:auto;background:white;border-radius:38px;padding:28px;box-shadow:0 30px 70px rgba(7,59,143,.15);display:grid;place-items:center;border:1px solid #e5f1fa}
+.logo-card img{width:100%;height:100%;object-fit:contain}
+section{padding:92px 0}.section-head{max-width:720px;margin-bottom:42px}.section-head .kicker{margin-bottom:8px}
+h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;color:var(--navy);margin-bottom:12px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border:1px solid #e4eef6;border-radius:22px;padding:28px;box-shadow:0 12px 35px rgba(8,35,63,.06);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(8,35,63,.1)}.icon{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#e5f8ff,#dcecff);font-size:1.55rem;margin-bottom:18px}
+.card h3{color:var(--navy);margin-bottom:8px;font-size:1.25rem}.card p{color:var(--muted)}
+.about{background:white}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}
+.about-panel{min-height:420px;border-radius:30px;padding:40px;display:flex;align-items:end;background:linear-gradient(145deg,rgba(7,59,143,.93),rgba(23,185,232,.8));color:white;overflow:hidden;position:relative}
+.about-panel:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.28);border-radius:50%;right:-70px;top:-70px;box-shadow:0 0 0 45px rgba(255,255,255,.05),0 0 0 90px rgba(255,255,255,.04)}
+.about-panel h3{font-size:2.2rem;line-height:1.1;position:relative;z-index:1}.checks{display:grid;gap:15px;margin-top:24px}
+.check{display:flex;gap:12px;align-items:flex-start}.check b{color:var(--navy)}.check i{width:26px;height:26px;flex:none;border-radius:50%;background:#dff7ff;color:var(--blue);display:grid;place-items:center;font-style:normal}
+.export{background:linear-gradient(180deg,#f6fbff,#eaf7ff)}.export-box{background:linear-gradient(120deg,var(--navy),#0a5ab0 55%,#11a9db);color:white;border-radius:30px;padding:55px;position:relative;overflow:hidden}
+.export-box:after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;border:1px solid rgba(255,255,255,.15);right:-120px;top:-140px;box-shadow:0 0 0 60px rgba(255,255,255,.035)}
+.export-box p{max-width:700px;color:#dcefff;margin-top:12px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px;position:relative;z-index:1}
+.stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:20px;border-radius:18px}.stat strong{display:block;font-size:1.35rem}.stat span{color:#d6efff;font-size:.9rem}
+.contact{background:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-card{background:#f5faff;border:1px solid #e1eef7;border-radius:22px;padding:30px}
+.contact-card h3{color:var(--navy);margin-bottom:10px}.contact-item{padding:13px 0;border-bottom:1px solid #e0edf6;color:var(--muted)}.contact-item:last-child{border-bottom:0}
+.contact-note{margin-top:15px;font-size:.9rem;color:#7890a6}footer{background:#041f3d;color:#dcecff;padding:30px 0}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}footer small{color:#9fb8d0}
+@media(max-width:800px){
+.nav-links{display:none;position:absolute;left:0;right:0;top:78px;background:white;padding:20px 4%;flex-direction:column;gap:15px;border-bottom:1px solid #e7f0f8}.nav-links.open{display:flex}.menu{display:block}
+.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:65px 0}.logo-card{width:min(360px,85vw)}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.export-box{padding:35px 25px}.footer-inner{flex-direction:column;text-align:center}
+}
+
+.gallery{background:#fff}
+.photo-grid{display:grid;grid-template-columns:1.35fr .85fr .85fr;grid-template-rows:260px 260px;gap:18px}
+.photo-card{margin:0;border-radius:22px;overflow:hidden;background:#eaf5fb;border:1px solid #e0edf6;box-shadow:0 12px 30px rgba(8,35,63,.08);position:relative}
+.photo-card img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}
+.photo-card:hover img{transform:scale(1.04)}
+.photo-card figcaption{position:absolute;left:14px;right:14px;bottom:14px;background:rgba(4,31,61,.78);color:white;padding:9px 13px;border-radius:12px;font-weight:700;font-size:.9rem;backdrop-filter:blur(6px)}
+.photo-wide{grid-row:1 / span 2}
+@media(max-width:800px){
+  .photo-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .photo-card,.photo-wide{height:280px;grid-row:auto}
+}
+
+
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:260px 260px;gap:16px}
+.gallery figure{margin:0;border-radius:22px;overflow:hidden;background:#eaf5fb;position:relative;box-shadow:0 10px 28px rgba(8,35,63,.08)}
+.gallery figure:first-child{grid-row:1/3}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s}
+.gallery figure:hover img{transform:scale(1.04)}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:#fff;font-weight:700;background:linear-gradient(transparent,rgba(0,20,45,.82))}
+@media(max-width:800px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:230px 230px}.gallery figure:first-child{grid-row:auto;grid-column:1/3}}
+
+<style>.product-cards{align-items:stretch}.product-card{padding:0;overflow:hidden}.product-card>img{width:100%;height:220px;object-fit:cover;display:block}.product-content{padding:24px}.product-tag{display:inline-block;background:#e4f7ff;color:#0874b9;padding:5px 10px;border-radius:999px;font-size:.76rem;font-weight:800;margin-bottom:10px}.text-link{display:inline-block;margin-top:15px;color:var(--blue);font-weight:800}.enquiry{background:linear-gradient(180deg,#eef9ff,#fff)}.enquiry-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}.enquiry-points{display:grid;gap:14px;color:#38556f;font-weight:650}.enquiry-points span{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#dff7ff;color:var(--blue);margin-right:8px}.enquiry-form{background:white;border:1px solid #dcebf5;border-radius:25px;padding:28px;box-shadow:0 18px 45px rgba(8,35,63,.08);display:grid;gap:13px}.enquiry-form input,.enquiry-form select,.enquiry-form textarea{width:100%;border:1px solid #cfe0ec;border-radius:12px;padding:13px 14px;font:inherit;color:var(--ink);background:#fbfdff;outline:none}.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(11,121,208,.08)}.enquiry-form textarea{resize:vertical}.enquiry-form small{color:#7890a6}@media(max-width:800px){.enquiry-grid{grid-template-columns:1fr}.product-card>img{height:240px}}</style></style>
+</head>
+<body>
+<nav><div class="container nav-inner">
+<a class="brand" href="#home"><img src="nnr-logo.png" alt="NNR Fisheries logo"><span>NNR Fisheries</span></a>
+<button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+<div class="nav-links"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#products">Products</a><a href="#exports">Exports</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<main>
+<section class="hero" id="home"><div class="container hero-grid"><div>
+<div class="kicker">Aquaculture • Seafood • Exports</div>
+<h1>From healthy waters to <span>global markets.</span></h1>
+<p>Welcome to NNR Fisheries — a professional aquaculture and seafood export brand focused on quality, responsible sourcing, and dependable business relationships.</p>
+<div class="actions"><a class="btn btn-primary" href="#contact">Contact NNR Fisheries</a><a class="btn btn-outline" href="#services">Explore Services</a></div>
+</div><div class="logo-card"><img src="nnr-logo.png" alt="NNR Fisheries"></div></div></section>
+
+<section class="about" id="about"><div class="container about-grid">
+<div class="about-panel"><h3>Built around quality, trust and long-term relationships.</h3></div>
+<div><div class="section-head"><div class="kicker">About NNR</div><h2>A fisheries business with a clear focus on quality.</h2><p>We connect aquaculture operations with customers and markets through a professional, quality-first approach.</p></div>
+<div class="checks">
+<div class="check"><i>✓</i><div><b>Quality focused</b><br><span>Careful handling and a consistent approach to product quality.</span></div></div>
+<div class="check"><i>✓</i><div><b>Reliable supply</b><br><span>Business processes designed around dependable customer service.</span></div></div>
+<div class="check"><i>✓</i><div><b>Export minded</b><br><span>Professional communication for domestic and international opportunities.</span></div></div>
+</div></div></div></section>
+
+<section id="services"><div class="container"><div class="section-head"><div class="kicker">What we do</div><h2>A complete aquaculture & export presence.</h2><p>These sections can be customized with your exact products, certifications, farm details and export destinations.</p></div>
+<div class="cards">
+<article class="card"><div class="icon">🦐</div><h3>Aquaculture</h3><p>Professional aquaculture operations with a focus on healthy production and quality management.</p></article>
+<article class="card"><div class="icon">📦</div><h3>Seafood Supply</h3><p>Organized sourcing, handling and supply for business customers and market requirements.</p></article>
+<article class="card"><div class="icon">🌍</div><h3>Exports</h3><p>Building reliable connections between quality fisheries products and customers across markets.</p></article>
+</div></div></section>
+
+
+<section id="products"><div class="container"><div class="section-head"><div class="kicker">Our products</div><h2>Fresh seafood, handled with care.</h2><p>Explore the seafood categories represented by NNR Fisheries. Product sizes, grades and availability can be discussed with our team.</p></div><div class="cards product-cards"><article class="card product-card"><img src="prawns.jpg" alt="Fresh prawns"><div class="product-content"><span class="product-tag">Seafood</span><h3>Fresh Prawns</h3><p>Fresh prawns suitable for business and export enquiries, subject to availability.</p><a class="text-link" href="#enquiry">Request enquiry →</a></div></article><article class="card product-card"><img src="fresh-fish.jpg" alt="Fresh fish"><div class="product-content"><span class="product-tag">Fresh Fish</span><h3>Fresh Fish</h3><p>Fresh fish supply for buyers looking for reliable fisheries products.</p><a class="text-link" href="#enquiry">Request enquiry →</a></div></article><article class="card product-card"><img src="fish-sorting.jpg" alt="Fish handling and sorting"><div class="product-content"><span class="product-tag">Supply</span><h3>Fish Supply</h3><p>Organized handling and supply for customer-specific requirements.</p><a class="text-link" href="#enquiry">Request enquiry →</a></div></article></div></div></section>
+<section class="enquiry" id="enquiry"><div class="container enquiry-grid"><div><div class="section-head"><div class="kicker">Business enquiry</div><h2>Tell us what you need.</h2><p>Send your requirement directly to NNR Fisheries through WhatsApp.</p></div><div class="enquiry-points"><div><span>✓</span> Product and quantity enquiries</div><div><span>✓</span> Buyer and export enquiries</div><div><span>✓</span> Availability and pricing discussions</div></div></div><form class="enquiry-form" onsubmit="sendEnquiry(event)"><input id="inqName" type="text" placeholder="Your name" required><input id="inqCompany" type="text" placeholder="Company name"><input id="inqCountry" type="text" placeholder="Country / location"><select id="inqProduct" required><option value="">Select product</option><option>Fresh Prawns</option><option>Fresh Fish</option><option>Fish Supply</option></select><input id="inqQuantity" type="text" placeholder="Required quantity"><textarea id="inqMessage" rows="4" placeholder="Your requirement"></textarea><button class="btn btn-primary" type="submit">Send Enquiry on WhatsApp</button><small>Email: nepalanagaraju0@gmail.com</small></form></div></section>
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our operations</div>
+      <h2>From our work to your market.</h2>
+      <p>A glimpse of fisheries products, handling and operations.</p>
+    </div>
+    <div class="photo-grid">
+      <figure class="photo-card photo-wide">
+        <img src="farm-truck.jpg" alt="NNR Fisheries operations and transport">
+        <figcaption>Fisheries operations & transport</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="prawns.jpg" alt="Fresh prawns">
+        <figcaption>Fresh prawns</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="fish-sorting.jpg" alt="Fish handling and sorting">
+        <figcaption>Fish handling & sorting</figcaption>
+      </figure>
+      <figure class="photo-card">
+        <img src="fresh-fish.jpg" alt="Fresh fish supply">
+        <figcaption>Fresh fish supply</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="gallery">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our work</div>
+      <h2>From farm to market.</h2>
+      <p>A glimpse of aquaculture, seafood handling and the supply process behind NNR Fisheries.</p>
+    </div>
+    <div class="gallery">
+      <figure><img src="farm-yard.jpg" alt="NNR Fisheries seafood handling and transport area"><figcaption>Seafood handling & transport</figcaption></figure>
+      <figure><img src="prawns.jpg" alt="Fresh prawns"><figcaption>Fresh prawns</figcaption></figure>
+      <figure><img src="fish-handling.jpg" alt="Fresh fish being handled"><figcaption>Fish handling</figcaption></figure>
+      <figure><img src="fish-supply.jpg" alt="Fresh fish supply"><figcaption>Fresh fish supply</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="export" id="exports"><div class="container"><div class="export-box">
+<div class="kicker" style="color:#aeeeff">Our vision</div><h2 style="color:white">Growing from local waters to global opportunities.</h2>
+<p>NNR Fisheries aims to build strong, transparent and lasting relationships with buyers while maintaining high standards across the supply chain.</p>
+<div class="stats"><div class="stat"><strong>Quality</strong><span>Focused operations</span></div><div class="stat"><strong>Trust</strong><span>Long-term relationships</span></div><div class="stat"><strong>Reach</strong><span>Export opportunities</span></div></div>
+</div></div></section>
+
+<section class="contact" id="contact"><div class="container"><div class="section-head"><div class="kicker">Get in touch</div><h2>Let’s do business.</h2><p>Add your real phone number, WhatsApp, email and business address here before publishing.</p></div>
+<div class="contact-grid"><div class="contact-card"><h3>NNR Fisheries</h3>
+<div class="contact-item">📞 Phone: <a href="tel:+917093655539"><strong>+91 70936 55539</strong></a></div><div class="contact-item">💬 WhatsApp: <a href="https://wa.me/917093655539" target="_blank" rel="noopener"><strong>+91 70936 55539</strong></a></div><div class="contact-item">✉️ Email: <strong>nepalanagaraju0@gmail.com</strong></div><div class="contact-item">📍 Business Address: <strong>Add your address</strong></div>
+<div class="contact-note">Replace the placeholder contact details with your official business information.</div></div>
+<div class="contact-card"><h3>For buyers & enquiries</h3><p style="color:var(--muted);margin-bottom:22px">Interested in our aquaculture or seafood export business? Contact NNR Fisheries for product and business enquiries.</p><a class="btn btn-primary" href="mailto:nepalanagaraju0@gmail.com">Send an Email</a></div>
+</div></div></section>
+</main>
+<footer><div class="container footer-inner"><div><strong>NNR Fisheries</strong><br><small>Aquaculture & Seafood Exports</small></div><small>© 2026 NNR Fisheries. All rights reserved.</small></div></footer>
+<script>document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));<script>function sendEnquiry(event){event.preventDefault();const name=document.getElementById('inqName').value.trim(),company=document.getElementById('inqCompany').value.trim(),country=document.getElementById('inqCountry').value.trim(),product=document.getElementById('inqProduct').value,quantity=document.getElementById('inqQuantity').value.trim(),message=document.getElementById('inqMessage').value.trim();const text=`Hello NNR Fisheries,%0A%0AName: ${encodeURIComponent(name)}%0ACompany: ${encodeURIComponent(company)}%0ALocation/Country: ${encodeURIComponent(country)}%0AProduct: ${encodeURIComponent(product)}%0AQuantity: ${encodeURIComponent(quantity)}%0ARequirement: ${encodeURIComponent(message)}`;window.open('https://wa.me/917093655539?text='+text,'_blank')}</script></script>
+</body></html>
