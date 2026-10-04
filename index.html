@@ -280,24 +280,3 @@ code = """<!-- CEO SECTION -->
 }
 </style>
 """
-
-code_file = out_dir / "ceo-section.html"
-code_file.write_text(code, encoding="utf-8")
-
-# Zip the two files for easy GitHub upload.
-import zipfile
-zip_path = Path("/mnt/data/NNR-CEO-GitHub-files.zip")
-with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
-    z.write(photo_dst, arcname=photo_dst.name)
-    z.write(code_file, arcname=code_file.name)
-
-print(f"Created: {zip_path}")
-print(f"Created: {code_file}")
-print(f"Created: {photo_dst}")
-<img src="./fish-supply.jpg" alt="Fish supply">
-
-<img src="./fresh-prawns.jpg" alt="Fresh prawns">
-
-<img src="./fish-supply.jpg" alt="Fish handling and sorting">
-
-<img src="./fresh-fish.jpg" alt="Fresh fish supply">
