@@ -1274,3 +1274,247 @@ h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;color:var(--navy);margin-bot
   .ceo-vision {
     padding: 28px 20px;
   }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Director | NNR Fisheries</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7fbff;
+    color: #234;
+}
+
+.director {
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* MEDIUM CIRCLE PHOTO */
+.photo {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.photo img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    outline: 3px solid #1684d8;
+    box-shadow: 0 8px 25px rgba(0, 80, 150, 0.18);
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+}
+
+.title small {
+    color: #1684d8;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.title h1 {
+    margin: 8px 0 5px;
+    font-size: 30px;
+    color: #07529c;
+}
+
+.title h3 {
+    margin: 0;
+    font-size: 15px;
+    color: #1684d8;
+    font-weight: 600;
+}
+
+.line {
+    width: 55px;
+    height: 3px;
+    background: #1684d8;
+    margin: 15px auto 25px;
+    border-radius: 5px;
+}
+
+/* INTRODUCTION */
+.description {
+    max-width: 680px;
+    margin: auto;
+    text-align: center;
+    color: #61778b;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* INFORMATION CARD */
+.card {
+    max-width: 720px;
+    margin: 30px auto;
+    background: white;
+    padding: 28px 32px;
+    border-radius: 16px;
+    border: 1px solid #e1edf5;
+    box-shadow: 0 8px 25px rgba(0, 80, 140, 0.08);
+}
+
+.card h2 {
+    margin: 0 0 18px;
+    font-size: 19px;
+    color: #07529c;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 13px 0;
+    font-size: 13px;
+    color: #536b7d;
+}
+
+.check {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #e7f7ee;
+    color: #15945b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* SKILLS */
+.skills {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.skills h2 {
+    font-size: 19px;
+    color: #07529c;
+    margin-bottom: 15px;
+}
+
+.skill {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 4px;
+    border-radius: 20px;
+    background: #eef8ff;
+    color: #0873b8;
+    border: 1px solid #d7ebf8;
+    font-size: 12px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .director {
+        margin: 25px auto;
+        padding: 15px;
+    }
+
+    .photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .title h1 {
+        font-size: 26px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="director">
+
+    <!-- DIRECTOR PHOTO -->
+    <div class="photo">
+        <img src="director.jpg" alt="N. N. Mani">
+    </div>
+
+    <!-- DIRECTOR NAME -->
+    <div class="title">
+
+        <small>OUR LEADERSHIP</small>
+
+        <h1>N. N. Mani</h1>
+
+        <h3>Director — NNR Fisheries</h3>
+
+        <div class="line"></div>
+
+    </div>
+
+    <!-- INTRODUCTION -->
+    <p class="description">
+        N. N. Mani is a dedicated Director of NNR Fisheries,
+        providing strategic leadership and direction for the
+        company's business activities, growth and development.
+    </p>
+
+    <!-- ACHIEVEMENTS -->
+    <div class="card">
+
+        <h2>Leadership & Achievements</h2>
+
+        <div class="item">
+            <span class="check">✓</span>
+            Strategic business development
+        </div>
+
+        <div class="item">
+            <span class="check">✓</span>
+            Leadership and organizational growth
+        </div>
+
+        <div class="item">
+            <span class="check">✓</span>
+            Business planning and development
+        </div>
+
+        <div class="item">
+            <span class="check">✓</span>
+            Focus on modern fisheries operations
+        </div>
+
+    </div>
+
+    <!-- SKILLS -->
+    <div class="skills">
+
+        <h2>Professional Skills</h2>
+
+        <span class="skill">Leadership</span>
+        <span class="skill">Business Management</span>
+        <span class="skill">Strategic Planning</span>
+        <span class="skill">Team Management</span>
+        <span class="skill">Decision Making</span>
+
+    </div>
+
+</div>
+
+</body>
+</html>
