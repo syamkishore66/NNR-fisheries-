@@ -1274,125 +1274,228 @@ h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;color:var(--navy);margin-bot
   .ceo-vision {
     padding: 28px 20px;
   }
-```html
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Director | NNR Industries</title>
+    <title>Director | NNR Fisheries</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f5f7f9;
-            color: #333;
+            background: #f7fcff;
+            color: #174a78;
         }
 
-        .director-card {
-            width: 90%;
-            max-width: 600px;
-            margin: 60px auto;
-            background: white;
-            padding: 25px;
+        .director-section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
             text-align: center;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
         }
 
-        .director-card img {
-            width: 120px;
-            height: 120px;
+        /* Director Photo */
+        .director-photo {
+            width: 205px;
+            height: 255px;
             object-fit: cover;
-            border-radius: 50%;
-            border: 3px solid #16805c;
+            border-radius: 18px;
+            border: 4px solid #147dcc;
+            box-shadow: 0 12px 30px rgba(0, 90, 160, 0.18);
+        }
+
+        .small-title {
+            margin-top: 25px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            color: #147dcc;
         }
 
         h1 {
-            font-size: 26px;
-            margin: 15px 0 5px;
-            color: #16805c;
+            margin: 8px 0;
+            font-size: 34px;
+            color: #06499b;
         }
 
         .position {
             font-size: 16px;
             font-weight: bold;
-            color: #555;
-            margin-bottom: 18px;
+            color: #0876c9;
         }
 
-        p {
-            font-size: 15px;
-            line-height: 1.6;
-            color: #666;
+        .line {
+            width: 65px;
+            height: 3px;
+            background: #147dcc;
+            margin: 15px auto 25px;
+            border-radius: 5px;
         }
 
-        .section {
-            margin-top: 22px;
+        .description {
+            max-width: 700px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 1.8;
+            color: #55718c;
         }
 
-        .section h2 {
-            font-size: 19px;
-            color: #16805c;
-            margin-bottom: 10px;
+        /* Information Box */
+        .info-box {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 25px;
+            background: white;
+            border: 1px solid #dcecf7;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 100, 170, 0.08);
+            text-align: left;
         }
 
-        .skills span {
+        .info-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #075bb0;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #55718c;
+        }
+
+        /* Skills */
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skill {
             display: inline-block;
-            padding: 7px 12px;
-            margin: 4px;
-            background: #e8f5ef;
-            color: #16805c;
-            border-radius: 15px;
+            padding: 8px 14px;
+            margin: 5px;
+            background: #eef8ff;
+            color: #0872bd;
+            border-radius: 20px;
             font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+
+            .director-section {
+                margin-top: 20px;
+            }
+
+            .director-photo {
+                width: 175px;
+                height: 220px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .description {
+                font-size: 13px;
+            }
+
+            .info-box {
+                margin: 25px 10px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <div class="director-card">
+    <section class="director-section">
 
-        <!-- Add your Director photo here -->
-        <img src="director.jpg" alt="N.N. Mani">
+        <!-- Director Photo -->
+        <img
+            src="director.jpg"
+            alt="N. N. Mani"
+            class="director-photo"
+        >
 
-        <h1>N.N. Mani</h1>
+        <div class="small-title">
+            OUR LEADERSHIP
+        </div>
+
+        <h1>N. N. Mani</h1>
 
         <div class="position">
-            Director – NNR Industries
+            Director — NNR Industries
         </div>
 
-        <p>
-            N.N. Mani is a dedicated Director of NNR Industries,
-            providing strong leadership and supporting the growth
-            and development of the company.
+        <div class="line"></div>
+
+        <p class="description">
+            N. N. Mani serves as the Director of NNR Industries,
+            providing leadership and strategic direction for the
+            company's business activities. His focus includes
+            business development, operational excellence and
+            long-term organizational growth.
         </p>
 
-        <div class="section">
-            <h2>Achievements</h2>
+
+        <div class="info-box">
+
+            <div class="info-title">
+                Leadership & Business Development
+            </div>
 
             <p>
-                Experienced in business development, leadership,
-                strategic planning and organizational growth.
+                Focused on strengthening business operations,
+                supporting company growth and developing effective
+                strategies for long-term success.
             </p>
+
+            <p>✓ Business development and strategic planning</p>
+
+            <p>✓ Leadership and team management</p>
+
+            <p>✓ Operational efficiency and quality management</p>
+
+            <p>✓ Decision making and organizational development</p>
+
+            <p>✓ Focus on innovation and continuous improvement</p>
+
         </div>
 
-        <div class="section">
-            <h2>Key Skills</h2>
+
+        <div class="info-box">
+
+            <div class="info-title">
+                Key Skills
+            </div>
 
             <div class="skills">
-                <span>Leadership</span>
-                <span>Business Management</span>
-                <span>Strategic Planning</span>
-                <span>Team Management</span>
-                <span>Decision Making</span>
+
+                <span class="skill">Leadership</span>
+
+                <span class="skill">Business Management</span>
+
+                <span class="skill">Strategic Planning</span>
+
+                <span class="skill">Team Management</span>
+
+                <span class="skill">Decision Making</span>
+
+                <span class="skill">Business Development</span>
+
             </div>
+
         </div>
 
-    </div>
+    </section>
 
 </body>
 </html>
-```
