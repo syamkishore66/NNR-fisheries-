@@ -1404,41 +1404,15 @@ h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;color:var(--navy);margin-bot
     padding: 28px 20px;
   }
 
-}
+<!-- ================= DIRECTOR — N. N. MANI ================= -->
 
-</style>
-<script>
-function sendEnquiry(event) {
-    event.preventDefault();
-
-    const name = document.getElementById("inqName").value.trim();
-    const company = document.getElementById("inqCompany").value.trim();
-    const country = document.getElementById("inqCountry").value.trim();
-    const product = document.getElementById("inqProduct").value.trim();
-    const quantity = document.getElementById("inqQuantity").value.trim();
-    const message = document.getElementById("inqMessage").value.trim();
-
-    const text =
-        "NEW ENQUIRY - NNR FISHERIES\n\n" +
-        "Name: " + name + "\n" +
-        "Company: " + company + "\n" +
-        "Country/Location: " + country + "\n" +
-        "Product: " + product + "\n" +
-        "Quantity: " + quantity + "\n" +
-        "Message: " + message;
-
-    const whatsappNumber = "917093655539";
-    const whatsappURL =
-        "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
-
-    window.open(whatsappURL, "_blank");
-} 
-  <!-- DIRECTOR -->
-<div class="leader-card">
+<div class="leader-card director-card">
 
   <div class="leader-image">
-    <img src="images/director-nn-mani.jpg"
-         alt="N. N. Mani - Director of NNR Fisheries">
+    <img
+      src="images/director-nn-mani.jpg"
+      alt="N. N. Mani - Director of NNR Fisheries"
+    >
   </div>
 
   <div class="leader-content">
@@ -1447,160 +1421,595 @@ function sendEnquiry(event) {
 
     <h3>N. N. Mani</h3>
 
-    <p>
+    <p class="leader-position">
       <strong>Director — NNR Fisheries</strong>
     </p>
 
     <p>
-      N. N. Mani is a dedicated Director at NNR Fisheries,
-      contributing to the company's growth through commitment,
-      responsibility, teamwork and strong business values.
+      N. N. Mani is a dedicated Director of NNR Fisheries,
+      contributing to the organization's development through
+      leadership, responsibility, coordination and a strong
+      commitment to sustainable business growth.
     </p>
 
     <p>
-      Her leadership reflects determination, hard work and
-      continuous learning, supporting the long-term growth and
-      success of NNR Fisheries.
+      With a focus on teamwork, planning and effective management,
+      the Director supports the company's vision of building a
+      strong and trusted presence in the fisheries and aquaculture
+      industry.
     </p>
 
-    <h4>Leadership Strengths</h4>
 
-    <ul>
-      <li>Strong commitment and dedication</li>
-      <li>Business leadership</li>
-      <li>Team coordination</li>
-      <li>Communication skills</li>
-      <li>Problem-solving</li>
-      <li>Decision-making</li>
-      <li>Business development</li>
-      <li>Focus on sustainable growth</li>
-    </ul>
+    <!-- LEADERSHIP -->
+    <div class="director-block">
 
-    <h4>Company Skills & Contribution</h4>
+      <h4>Leadership & Strengths</h4>
 
-    <div class="skill-tags">
+      <ul class="director-list">
 
-      <span>Business Management</span>
-      <span>Leadership</span>
-      <span>Team Building</span>
-      <span>Communication</span>
-      <span>Planning</span>
-      <span>Operations</span>
-      <span>Customer Relations</span>
-      <span>Business Development</span>
+        <li>
+          <span>✓</span>
+          Strong leadership and responsibility
+        </li>
+
+        <li>
+          <span>✓</span>
+          Business planning and coordination
+        </li>
+
+        <li>
+          <span>✓</span>
+          Team management and collaboration
+        </li>
+
+        <li>
+          <span>✓</span>
+          Effective communication
+        </li>
+
+        <li>
+          <span>✓</span>
+          Problem solving and decision making
+        </li>
+
+        <li>
+          <span>✓</span>
+          Focus on sustainable business growth
+        </li>
+
+      </ul>
+
+    </div>
+
+
+    <!-- COMPANY CONTRIBUTION -->
+    <div class="director-block">
+
+      <h4>Contribution to NNR Fisheries</h4>
+
+      <p>
+        Supporting organizational development, strengthening
+        teamwork and contributing to the company's long-term
+        business vision and operational growth.
+      </p>
+
+    </div>
+
+
+    <!-- PROFESSIONAL SKILLS -->
+    <div class="director-block">
+
+      <h4>Professional Skills</h4>
+
+      <div class="director-skills">
+
+        <span>Leadership</span>
+        <span>Management</span>
+        <span>Communication</span>
+        <span>Planning</span>
+        <span>Team Building</span>
+        <span>Decision Making</span>
+        <span>Business Development</span>
+        <span>Operations</span>
+
+      </div>
 
     </div>
 
   </div>
 
 </div>
-  <!-- GENERAL MANAGER -->
-<div class="leader-card">
+  <!-- =========================================================
+     DR. N. SAHITHI PRIYA
+     GENERAL MANAGER — NNR INDUSTRIES
+     ========================================================= -->
 
-  <div class="leader-image">
-    <img src="images/dr-n-sahithi-priya.jpg"
-         alt="Dr. N. Sahithi Priya - General Manager of NNR Industries">
+<style>
+
+/* ================= GENERAL MANAGER CARD ================= */
+
+.gm-card {
+  width: 100%;
+  max-width: 560px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+  transition: 0.3s ease;
+}
+
+.gm-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================= IMAGE ================= */
+
+.gm-image {
+  width: 100%;
+  height: 390px;
+  overflow: hidden;
+  background: #eef8f3;
+}
+
+.gm-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.gm-card:hover .gm-image img {
+  transform: scale(1.04);
+}
+
+
+/* ================= CONTENT ================= */
+
+.gm-content {
+  padding: 32px;
+}
+
+.gm-role {
+  display: inline-block;
+  color: #16865c;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.gm-name {
+  margin: 0;
+  color: #123c32;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.gm-position {
+  color: #16865c;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 8px 0 22px;
+}
+
+.gm-description {
+  color: #555;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+
+/* ================= SECTION TITLES ================= */
+
+.gm-section {
+  margin-top: 30px;
+}
+
+.gm-section h4 {
+  margin: 0 0 15px;
+  color: #123c32;
+  font-size: 19px;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.gm-education {
+  padding: 20px;
+  background: #f4faf7;
+  border-radius: 15px;
+  border-left: 4px solid #16865c;
+}
+
+.gm-education strong {
+  color: #123c32;
+  font-size: 18px;
+}
+
+.gm-education p {
+  margin: 8px 0 0;
+  color: #666;
+  line-height: 1.7;
+}
+
+
+/* ================= ACHIEVEMENTS ================= */
+
+.gm-achievements {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gm-achievements li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.gm-achievements li::before {
+  content: "✓";
+  color: #16865c;
+  font-weight: 900;
+}
+
+
+/* ================= WOMEN LEADERSHIP ================= */
+
+.gm-women {
+  margin-top: 30px;
+  padding: 24px;
+  background: linear-gradient(
+    135deg,
+    #fff7fb,
+    #f2faf6
+  );
+  border-radius: 16px;
+  border-left: 4px solid #16865c;
+}
+
+.gm-women h4 {
+  margin-top: 0;
+}
+
+.gm-women p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+
+/* ================= VALUES ================= */
+
+.gm-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.gm-values span {
+  padding: 9px 14px;
+  border-radius: 25px;
+  background: #ffffff;
+  border: 1px solid #d7ebe1;
+  color: #126b4b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+/* ================= SKILLS ================= */
+
+.gm-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gm-skills span {
+  padding: 10px 15px;
+  background: #e8f5ef;
+  border: 1px solid #d1e9dd;
+  color: #126b4b;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.gm-skills span:hover {
+  background: #16865c;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+
+/* ================= CV ================= */
+
+.gm-cv {
+  margin-top: 32px;
+  padding: 25px;
+  background: #123c32;
+  border-radius: 17px;
+  color: #ffffff;
+}
+
+.gm-cv-title {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 0 0 18px;
+}
+
+.gm-cv-row {
+  display: grid;
+  grid-template-columns: 125px 1fr;
+  gap: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  line-height: 1.5;
+}
+
+.gm-cv-row:last-child {
+  border-bottom: none;
+}
+
+.gm-cv-row strong {
+  color: #b9ead5;
+}
+
+.gm-cv-row span {
+  color: #ffffff;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+  .gm-card {
+    width: 100%;
+  }
+
+  .gm-image {
+    height: 320px;
+  }
+
+  .gm-content {
+    padding: 24px;
+  }
+
+  .gm-name {
+    font-size: 27px;
+  }
+
+  .gm-cv-row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+}
+
+</style>
+
+
+<!-- =========================================================
+     GENERAL MANAGER PROFILE
+     ========================================================= -->
+
+<div class="gm-card">
+
+  <!-- PHOTO -->
+  <div class="gm-image">
+    <img
+      src="images/dr-n-sahithi-priya.jpg"
+      alt="Dr. N. Sahithi Priya - General Manager of NNR Industries"
+    >
   </div>
 
-  <div class="leader-content">
 
-    <span class="leader-role">GENERAL MANAGER</span>
+  <!-- PROFILE -->
+  <div class="gm-content">
 
-    <h3>Dr. N. Sahithi Priya</h3>
+    <span class="gm-role">
+      GENERAL MANAGER
+    </span>
 
-    <p>
-      <strong>General Manager — NNR Industries</strong>
+    <h3 class="gm-name">
+      Dr. N. Sahithi Priya
+    </h3>
+
+    <p class="gm-position">
+      General Manager — NNR Industries
     </p>
 
-    <p>
-      Dr. N. Sahithi Priya is a professional leader serving as
+
+    <!-- INTRODUCTION -->
+
+    <p class="gm-description">
+      Dr. N. Sahithi Priya is a dedicated professional serving as
       General Manager of NNR Industries. She contributes to the
-      organization through responsible management, communication,
-      teamwork, planning and professional decision-making.
+      organization through responsible management, professional
+      communication, teamwork and effective coordination.
     </p>
+
+    <p class="gm-description">
+      Her professional approach reflects determination, hard work,
+      discipline, continuous learning and a commitment to
+      organizational growth and success.
+    </p>
+
 
     <!-- EDUCATION -->
-    <h4>Education</h4>
 
-    <ul class="education-list">
+    <div class="gm-section">
 
-      <li>
+      <h4>🎓 Education</h4>
+
+      <div class="gm-education">
+
         <strong>MBBS</strong>
-        <br>
-        Bachelor of Medicine and Bachelor of Surgery
-      </li>
 
-      <li>
-        <strong>Graduate Achievement</strong>
-        <br>
-        Medical education and professional development with a
-        focus on knowledge, discipline and continuous learning.
-      </li>
+        <p>
+          Bachelor of Medicine and Bachelor of Surgery.
+          Medical education providing a strong foundation in
+          professional knowledge, discipline, responsibility
+          and continuous learning.
+        </p>
 
-    </ul>
+      </div>
+
+    </div>
 
 
     <!-- ACHIEVEMENTS -->
-    <h4>Professional Achievements</h4>
 
-    <ul>
-      <li>Professional medical education through MBBS</li>
-      <li>Strong commitment to continuous learning</li>
-      <li>Professional discipline and responsibility</li>
-      <li>Leadership and organizational development</li>
-      <li>Team coordination and management</li>
-      <li>Focus on quality and professional standards</li>
-    </ul>
+    <div class="gm-section">
+
+      <h4>🏆 Professional Achievements</h4>
+
+      <ul class="gm-achievements">
+
+        <li>
+          Successfully completed MBBS education.
+        </li>
+
+        <li>
+          Demonstrates professional discipline and responsibility.
+        </li>
+
+        <li>
+          Supports effective organizational management.
+        </li>
+
+        <li>
+          Promotes teamwork and professional coordination.
+        </li>
+
+        <li>
+          Maintains a strong commitment to continuous learning.
+        </li>
+
+        <li>
+          Contributes to organizational development and growth.
+        </li>
+
+      </ul>
+
+    </div>
 
 
-    <!-- COMMUNICATION -->
-    <h4>Communication & Management Skills</h4>
+    <!-- WOMEN LEADERSHIP -->
 
-    <div class="skill-tags">
+    <div class="gm-women">
 
-      <span>Communication</span>
-      <span>Leadership</span>
-      <span>Team Management</span>
-      <span>Professional Communication</span>
-      <span>Decision Making</span>
-      <span>Problem Solving</span>
-      <span>Planning</span>
-      <span>Organization</span>
-      <span>Team Coordination</span>
-      <span>Business Management</span>
+      <h4>🌸 Women in Leadership</h4>
+
+      <p>
+        Her professional journey represents determination,
+        confidence and perseverance. Her leadership highlights
+        the importance of education, hard work, discipline and
+        continuous improvement in achieving professional success.
+      </p>
+
+      <div class="gm-values">
+
+        <span>Hard Work</span>
+        <span>Determination</span>
+        <span>Leadership</span>
+        <span>Confidence</span>
+        <span>Discipline</span>
+        <span>Success</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- COMMUNICATION & COMPANY SKILLS -->
+
+    <div class="gm-section">
+
+      <h4>💬 Communication & Company Skills</h4>
+
+      <div class="gm-skills">
+
+        <span>Professional Communication</span>
+        <span>Leadership</span>
+        <span>Team Management</span>
+        <span>Team Coordination</span>
+        <span>Planning</span>
+        <span>Organization</span>
+        <span>Decision Making</span>
+        <span>Problem Solving</span>
+        <span>Business Management</span>
+        <span>Professional Development</span>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTRIBUTION -->
+
+    <div class="gm-section">
+
+      <h4>🏢 Contribution to NNR Industries</h4>
+
+      <p class="gm-description">
+        As General Manager, Dr. N. Sahithi Priya supports
+        organizational coordination, professional management,
+        teamwork and the long-term development of NNR Industries.
+      </p>
 
     </div>
 
 
     <!-- CV -->
-    <div class="cv-box">
 
-      <h4>Professional CV</h4>
+    <div class="gm-cv">
 
-      <p>
-        <strong>Name:</strong> Dr. N. Sahithi Priya
-      </p>
+      <h4 class="gm-cv-title">
+        Professional CV
+      </h4>
 
-      <p>
-        <strong>Position:</strong> General Manager
-      </p>
+      <div class="gm-cv-row">
+        <strong>Name</strong>
+        <span>Dr. N. Sahithi Priya</span>
+      </div>
 
-      <p>
-        <strong>Organization:</strong> NNR Industries
-      </p>
+      <div class="gm-cv-row">
+        <strong>Position</strong>
+        <span>General Manager</span>
+      </div>
 
-      <p>
-        <strong>Qualification:</strong> MBBS
-      </p>
+      <div class="gm-cv-row">
+        <strong>Organization</strong>
+        <span>NNR Industries</span>
+      </div>
 
-      <p>
-        <strong>Professional Focus:</strong>
-        Leadership, communication, management, teamwork,
-        organizational development and continuous improvement.
-      </p>
+      <div class="gm-cv-row">
+        <strong>Qualification</strong>
+        <span>MBBS</span>
+      </div>
+
+      <div class="gm-cv-row">
+        <strong>Skills</strong>
+        <span>
+          Leadership, Communication, Management,
+          Teamwork and Planning
+        </span>
+      </div>
 
     </div>
 
   </div>
 
 </div>
+
