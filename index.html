@@ -107,35 +107,6 @@ h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;color:var(--navy);margin-bot
 <section class="gallery" id="gallery">
   <div class="container">
     <div class="section-head">
-      <div class="kicker">Our operations</div>
-      <h2>From our work to your market.</h2>
-      <p>A glimpse of fisheries products, handling and operations.</p>
-    </div>
-    <div class="photo-grid">
-      <figure class="photo-card photo-wide">
-        <img src="farm-truck.jpg" alt="NNR Fisheries operations and transport">
-        <figcaption>Fisheries operations & transport</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img src="prawns.jpg" alt="Fresh prawns">
-        <figcaption>Fresh prawns</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img src="fish-sorting.jpg" alt="Fish handling and sorting">
-        <figcaption>Fish handling & sorting</figcaption>
-      </figure>
-      <figure class="photo-card">
-        <img src="fresh-fish.jpg" alt="Fresh fish supply">
-        <figcaption>Fresh fish supply</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-
-<section id="gallery">
-  <div class="container">
-    <div class="section-head">
       <div class="kicker">Our work</div>
       <h2>From farm to market.</h2>
       <p>A glimpse of aquaculture, seafood handling and the supply process behind NNR Fisheries.</p>
@@ -165,21 +136,6 @@ h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;color:var(--navy);margin-bot
 <footer><div class="container footer-inner"><div><strong>NNR Fisheries</strong><br><small>Aquaculture & Seafood Exports</small></div><small>© 2026 NNR Fisheries. All rights reserved.</small></div></footer>
 <script>document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));<script>function sendEnquiry(event){event.preventDefault();const name=document.getElementById('inqName').value.trim(),company=document.getElementById('inqCompany').value.trim(),country=document.getElementById('inqCountry').value.trim(),product=document.getElementById('inqProduct').value,quantity=document.getElementById('inqQuantity').value.trim(),message=document.getElementById('inqMessage').value.trim();const text=`Hello NNR Fisheries,%0A%0AName: ${encodeURIComponent(name)}%0ACompany: ${encodeURIComponent(company)}%0ALocation/Country: ${encodeURIComponent(country)}%0AProduct: ${encodeURIComponent(product)}%0AQuantity: ${encodeURIComponent(quantity)}%0ARequirement: ${encodeURIComponent(message)}`;window.open('https://wa.me/917093655539?text='+text,'_blank')}</script></script>
 </body></html>  
-from pathlib import Path
-import shutil
-
-photo_src = Path("/mnt/data/Screenshot 2026-10-05 030622.png")
-out_dir = Path("/mnt/data/nnr-ceo-upload")
-out_dir.mkdir(exist_ok=True)
-
-# Rename the uploaded CEO photo to a web-friendly filename.
-photo_dst = out_dir / "ceo-nepala-syam-kishore.jpg"
-
-# Convert PNG to JPG using Pillow.
-from PIL import Image
-img = Image.open(photo_src).convert("RGB")
-img.save(photo_dst, quality=92)
-# Standalone section to paste into the existing index.html.
 <!-- =========================================================
      NNR FISHERIES - CHAIRPERSON / LEADERSHIP
      ========================================================= -->
@@ -1352,111 +1308,4 @@ function sendEnquiry(event) {
         "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
 
     window.open(whatsappURL, "_blank");
-}
-</script>
-<section class="products" id="products">
-
-    <div class="products-container">
-
-        <div class="products-heading">
-            <span>OUR PRODUCTS</span>
-
-            <h2>Fresh seafood, handled with care.</h2>
-
-            <p>
-                Explore the seafood categories represented by NNR Fisheries.
-                Product sizes, grades and availability can be discussed with our team.
-            </p>
-        </div>
-
-
-        <div class="products-grid">
-
-            <!-- PRODUCT 1 -->
-            <div class="product-card">
-
-                <img
-                    src="images/prawns.jpg"
-                    alt="Fresh Prawns"
-                >
-
-                <div class="product-info">
-
-                    <span class="tag">Seafood</span>
-
-                    <h3>Fresh Prawns</h3>
-
-                    <p>
-                        Fresh prawns suitable for business and export enquiries,
-                        subject to availability.
-                    </p>
-
-                    <a href="#contact">
-                        Request enquiry →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 2 -->
-            <div class="product-card">
-
-                <img
-                    src="images/fresh-fish.jpg"
-                    alt="Fresh Fish"
-                >
-
-                <div class="product-info">
-
-                    <span class="tag">Fresh Fish</span>
-
-                    <h3>Fresh Fish</h3>
-
-                    <p>
-                        Fresh fish supply for buyers looking for reliable
-                        fisheries products.
-                    </p>
-
-                    <a href="#contact">
-                        Request enquiry →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- PRODUCT 3 -->
-            <div class="product-card">
-
-                <img
-                    src="images/fish-supply.jpg"
-                    alt="Fish Supply"
-                >
-
-                <div class="product-info">
-
-                    <span class="tag">Supply</span>
-
-                    <h3>Fish Supply</h3>
-
-                    <p>
-                        Organized handling and supply for customer-specific
-                        requirements.
-                    </p>
-
-                    <a href="#contact">
-                        Request enquiry →
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
+} 
