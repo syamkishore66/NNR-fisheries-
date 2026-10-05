@@ -1327,3 +1327,30 @@ img.save(photo_dst, quality=92)
 }
 
 </style>
+<script>
+function sendEnquiry(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("inqName").value.trim();
+    const company = document.getElementById("inqCompany").value.trim();
+    const country = document.getElementById("inqCountry").value.trim();
+    const product = document.getElementById("inqProduct").value.trim();
+    const quantity = document.getElementById("inqQuantity").value.trim();
+    const message = document.getElementById("inqMessage").value.trim();
+
+    const text =
+        "NEW ENQUIRY - NNR FISHERIES\n\n" +
+        "Name: " + name + "\n" +
+        "Company: " + company + "\n" +
+        "Country/Location: " + country + "\n" +
+        "Product: " + product + "\n" +
+        "Quantity: " + quantity + "\n" +
+        "Message: " + message;
+
+    const whatsappNumber = "917093655539";
+    const whatsappURL =
+        "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text);
+
+    window.open(whatsappURL, "_blank");
+}
+</script>
