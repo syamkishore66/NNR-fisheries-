@@ -134,8 +134,32 @@ h2{font-size:clamp(2rem,4vw,3.1rem);line-height:1.1;color:var(--navy);margin-bot
 </div></div></section>
 </main>
 <footer><div class="container footer-inner"><div><strong>NNR Fisheries</strong><br><small>Aquaculture & Seafood Exports</small></div><small>© 2026 NNR Fisheries. All rights reserved.</small></div></footer>
-<script>document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));<script>function sendEnquiry(event){event.preventDefault();const name=document.getElementById('inqName').value.trim(),company=document.getElementById('inqCompany').value.trim(),country=document.getElementById('inqCountry').value.trim(),product=document.getElementById('inqProduct').value,quantity=document.getElementById('inqQuantity').value.trim(),message=document.getElementById('inqMessage').value.trim();const text=`Hello NNR Fisheries,%0A%0AName: ${encodeURIComponent(name)}%0ACompany: ${encodeURIComponent(company)}%0ALocation/Country: ${encodeURIComponent(country)}%0AProduct: ${encodeURIComponent(product)}%0AQuantity: ${encodeURIComponent(quantity)}%0ARequirement: ${encodeURIComponent(message)}`;window.open('https://wa.me/917093655539?text='+text,'_blank')}</script></script>
-</body></html>  
+  <script>
+function sendEnquiry(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("inqName").value.trim();
+  const company = document.getElementById("inqCompany").value.trim();
+  const country = document.getElementById("inqCountry").value.trim();
+  const product = document.getElementById("inqProduct").value;
+  const quantity = document.getElementById("inqQuantity").value.trim();
+  const message = document.getElementById("inqMessage").value.trim();
+
+  const text =
+    "Hello NNR Fisheries,%0A%0A" +
+    "Name: " + encodeURIComponent(name) + "%0A" +
+    "Company: " + encodeURIComponent(company) + "%0A" +
+    "Country: " + encodeURIComponent(country) + "%0A" +
+    "Product: " + encodeURIComponent(product) + "%0A" +
+    "Quantity: " + encodeURIComponent(quantity) + "%0A" +
+    "Requirement: " + encodeURIComponent(message);
+
+  window.open(
+    "https://wa.me/917093655539?text=" + text,
+    "_blank"
+  );
+}
+</script>
 <!-- =========================================================
      NNR FISHERIES - CHAIRPERSON / LEADERSHIP
      ========================================================= -->
